@@ -1,0 +1,930 @@
+:root{
+--primary: #FFCE00;
+--secondary: #FE4880;
+--dark: #212121;
+--light: #F3F3F3;
+}
+body{
+font-family: "Raleway";
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    }
+.nav-link{
+cursor: pointer;
+}
+.logo-text{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+html{
+    scrollbar-width: thin;
+}
+.nav-list > li > a:hover{
+    color:#FE4880;
+}
+.kompetence-liste li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+.about-me-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap:50px;
+}
+.resume-btn > a{
+    border: 1px solid var(--secondary);
+    border-radius: 6px;
+    padding:12px 14px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    cursor: pointer;
+}
+.card{
+width: 225px;
+height: 325px;
+margin-bottom: 35px;
+}
+        .card > div{
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card__software.is-flipped{
+            transform: rotateY(180deg);
+        }
+        .card__student.is-flipped{
+            transform: rotateY(180deg);
+        }
+        .card__multiplayerspil.is-flipped{
+            transform: rotateY(180deg);
+        }
+        .card__socialmedie.is-flipped{
+            transform: rotateY(180deg);
+        }   
+.card__projektstyring.is-flipped{
+transform: rotateY(180deg);
+}
+.card__skoleapi.is-flipped{
+    transform: rotateY(180deg);
+    }
+
+.card__ansigt{
+position: absolute;
+width: 100%;
+background-color: white;
+height: 100%;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+overflow: hidden;
+border-radius: 16px;
+box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
+}
+.card__ansigt > .kompetence-liste{
+flex-direction: column;
+height: 100%;
+justify-content: center;
+display: flex;
+list-style-type: none;
+width: 70%;
+}
+.kompetence-liste > li{
+    padding:0.5rem;
+    font-size: 1.0rem;
+}
+
+.card__ansigt--front{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.card__ansigt--front h2{
+color:white;
+font-size: 32px;
+}
+.card__ansigt--back{
+background-color: var(--light);
+transform: rotateY(180deg);
+}
+.card__krop{
+color: black;
+}
+.card__ansigt{
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+overflow: hidden;
+border-radius: 16px;
+box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
+}
+.card__ansigt > .kompetence-liste{
+flex-direction: column;
+height: 100%;
+justify-content: center;
+display: flex;
+font-size: 2rem;
+}
+        @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+.fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+         }
+
+
+
+.card__ansigt--front{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.card__ansigt--front h2{
+color:white;
+font-size: 32px;
+}
+.card__ansigt--back{
+background-color: var(--light);
+transform: rotateY(180deg);
+}
+.navn-tag{
+color:#E31B6D;
+}
+.profilePic{
+    width: 65px;
+}
+header{
+    background-color: #252934;
+    padding: 0 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+}
+.nav-link{
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+}
+ol li a::before{
+    content:"0" counter(item) ".";
+    margin-right: 5px;
+    color: var(--secondary);
+    text-align: right;
+}
+.resume-btn > a:hover{
+    background-color: var(--secondary);
+    color: white;
+}
+.resume-btn{
+    margin-left: 15px;
+}
+.icons-some{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+}
+.some-link{
+    padding: 10px;
+    text-decoration: none;
+    color: slategray;
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+.some-link > i{
+    font-size: 1.6rem;
+}
+.icons-some > li{
+    padding: 10px;
+}
+.some-link:hover{
+    color: var(--secondary);
+}
+.icons-some::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: slategray;
+}
+.socials-icon{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: slategray;
+}
+.email-contact{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+}
+.email-contact::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: slategray;
+}
+.email-contact > a{
+    margin: 20px auto;
+    padding: 10px;
+    font-family:'Roboto Mono', monospace;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: slategray;
+    writing-mode: vertical-rl;
+}
+.email-contact > a:hover{
+    color: var(--secondary);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.big-nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: outside none none;
+}
+.big-nav > li{
+    color: white;
+    margin: 0 5px;
+    position: relative;
+    counter-increment: item 1;
+
+}
+.loading{
+    display: none;
+}
+.header-container{
+background-color: #252934;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content:center;
+flex-direction: column;
+max-width: 100vw;
+width: 100%;
+}
+#intro-navn{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 500;  
+    width: 65vw;
+}
+.navn{
+color: rgba(255, 0, 179, 0.789);
+}
+.card__krop{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100%;
+}
+.card__krop > p{
+font-weight: 600;
+font-family: "Raleway";
+margin-top: 10px;
+width: 80%;
+font-size: 16px;
+margin: 0 auto;
+word-wrap: break-word;
+margin-bottom: 15vh;
+margin-top: 10px;
+}
+.card__krop > button{
+padding: 15px;
+color: black;
+background-color: transparent;
+border: 2px solid black;
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+width: 80%;
+margin: 0 auto;
+}
+
+.knap-container{
+display: flex;
+margin: 0 auto;
+}
+
+.knap-container > button{
+    padding: 15px;
+    color: black;
+    background-color: transparent;
+    border:none;
+   
+    font-size: 1.5rem;
+    margin: 10px;
+    }
+.knap-container > button > i:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
+.card__indhold{
+    height: 100%;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+.btn{
+padding:15px;
+color:white;
+background-color: transparent;
+border:2.5px solid white;
+font-family: 'Roboto', sans-serif;
+margin-top: 5vh;
+display: flex;
+align-items: center;
+font-size: 1rem;
+}
+
+.fejl{
+color:red;
+}
+.success{
+color: green;
+}
+.card-container{
+height: 50vh;
+width:250px;
+margin:15px;
+display: flex;
+margin-bottom: 10vh;
+flex-direction: column;
+justify-content: center;
+font-family: "Raleway";
+text-align: center;
+flex-wrap: wrap;
+border: 2px solid white;
+background:transparent;
+}
+.modal{
+background-color: white;
+width: 60%;
+height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.modal-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+    }
+
+    .bg-active{
+      visibility: visible;
+      opacity: 1;  
+    }
+        .aktiv{
+        color:rgba(255, 0, 179, 0.789);
+        } 
+        .hr-linje{
+        width: 10%;
+        background-color: white;
+        margin-top: 4vh;
+        margin-bottom:8vh;
+        margin: 0 auto;
+        }
+        .modal-close{
+         position: absolute;
+         top: 10px;
+         right: 10px;   
+         cursor: pointer;
+         font-size:2rem;
+         color: white;
+        }
+
+.hamburger-icon{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.hamburger-icon > i{
+    font-size: 1.8rem;
+    color: white;
+}
+main{
+    padding: 0 150px;
+    background-color:#252934;
+}
+.mobile-active{
+    display: flex !important;
+}
+.section-title{
+display: flex;
+align-items: center;
+position: relative;
+margin: 10px 0px 40px;
+width: 100%;
+color: white;
+white-space: nowrap;
+}
+body{counter-reset: section;}
+a{
+    text-decoration: none;
+}
+.section-title::before{
+    position: relative;
+    bottom: 4px;
+    counter-increment: section;
+    content:"0" counter(section) ".";
+    margin-right: 10px;
+    font-family:'Roboto Mono', monospace;
+    color: var(--secondary);
+}
+.section-title::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color:slategray;
+}
+.btn > i {
+margin-left: 1vw;
+}
+.btn:hover{
+background-color:white;
+color: black;
+cursor: pointer;    
+}
+section{
+    padding: 100px 0px;
+    margin: 0 auto;
+}
+.form-container{
+    width: 100%;
+}
+.nav-list > li > a, .skills-list > li{
+text-decoration: none;
+color:white;
+}
+.kontakt{
+display: flex;
+justify-content: center;
+background-color:#252934;
+flex-direction: column;
+}
+form{
+ display: flex;
+ flex-direction: column;   
+ margin:0 auto;
+ width: 100%;
+}
+.about-me > p{
+margin:0px 0px 15px;
+line-height: 1.3;
+color: white;
+}
+.kontakt > h3{
+color: white;
+margin-top: 2vh;
+margin-bottom: 3vh;
+text-align: left;
+padding: 10px;
+}
+.about-me-pic{
+    position: relative;
+    margin-left: 50px;
+}
+.image_div{
+    width:260px;
+    height:280px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  } 
+  .image_div img{
+    max-width:100%;
+    max-height:100%;
+  }
+  .image_div .img_overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+  }
+  .img_overlay:hover{
+    background: none !important;
+}
+
+.about-me-img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: none;
+    border-radius: 10px;
+}
+.card-top{
+    height: 12rem;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position:center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg');
+    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+}
+.card-software{
+ background-image: url('https://media.istockphoto.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640');
+ background-image: url('https://media.istockphoto.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640'), 
+                   -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+ background-image: url('https://media.istockphoto.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640'), 
+                   -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+ background-image: url('https://media.istockphoto.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640'), 
+                   linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+}
+.card-socialmedie{
+ background-image: url('https://i.pinimg.com/originals/84/47/c0/8447c02348b3a76cf8e0d349f31e8b94.jpg');
+ background-image: url('https://i.pinimg.com/originals/84/47/c0/8447c02348b3a76cf8e0d349f31e8b94.jpg'), 
+                   -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+ background-image: url('https://i.pinimg.com/originals/84/47/c0/8447c02348b3a76cf8e0d349f31e8b94.jpg'), 
+                   -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+ background-image: url('https://i.pinimg.com/originals/84/47/c0/8447c02348b3a76cf8e0d349f31e8b94.jpg'), 
+                   linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+
+}
+.card-school{
+   background-image: url('https://miro.medium.com/max/1400/1*LPv0wCixB9W2CD4OgFA5cg@2x.jpeg');
+   background-image: url('https://miro.medium.com/max/1400/1*LPv0wCixB9W2CD4OgFA5cg@2x.jpeg'), 
+                     -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+   background-image: url('https://miro.medium.com/max/1400/1*LPv0wCixB9W2CD4OgFA5cg@2x.jpeg'), 
+                     -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+   background-image: url('https://miro.medium.com/max/1400/1*LPv0wCixB9W2CD4OgFA5cg@2x.jpeg'), 
+                     linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+}
+.card-multiplayer{
+   background-image: url('https://media.istockphoto.com/videos/retro-land-video-id1171564349?s=640x640');
+   background-image: url('https://media.istockphoto.com/videos/retro-land-video-id1171564349?s=640x640'), 
+                     -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+   background-image: url('https://media.istockphoto.com/videos/retro-land-video-id1171564349?s=640x640'), 
+                     -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+   background-image: url('https://media.istockphoto.com/videos/retro-land-video-id1171564349?s=640x640'), 
+                     linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+}
+
+.card-skoleapi{
+   background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/3E0C/production/_112548851_gettyimages-1225728782.jpg');
+   background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/3E0C/production/_112548851_gettyimages-1225728782.jpg'), 
+                     -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+   background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/3E0C/production/_112548851_gettyimages-1225728782.jpg'), 
+                     -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+   background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/3E0C/production/_112548851_gettyimages-1225728782.jpg'), 
+                     linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+}
+.card-span{
+    background-image: linear-gradient(to right bottom, rgba(57, 107, 42, 0.9), rgba(27, 46, 33, 0.9));
+}
+.social-medie-blue{
+    background-image: linear-gradient(to right bottom, rgba(5, 95, 197, 0.9), rgba(16, 11, 95, 0.9));
+
+}
+.project-silver{
+    background-image: linear-gradient(to right bottom, rgba(210, 233, 255, 0.9), rgba(148, 148, 148, 0.9));
+
+}
+.purple-game{
+    background-image: linear-gradient(to right bottom, rgba(124, 80, 165, 0.9), rgba(158, 16, 127, 0.9));
+
+}
+.software-dark{
+    background-image: linear-gradient(to right bottom, rgba(46, 37, 129, 0.9), rgba(75, 76, 90, 0.9));
+}
+.card-gif{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+.card-project{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 1rem;
+    text-align: right;
+    right: 2rem;
+    width: 70%;
+    line-height-step: 3.5rem;
+    color: white;
+}
+h3{
+margin-top: 5vh;
+margin-bottom: 5vh;
+font-size: 1rem;
+}
+textarea{
+    background: #1E242C;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    margin: 2px;
+    color: white;
+    font-family: 'Raleway';
+}
+form > input {
+background: #1E242C;
+font-size: 1.5rem;
+border: none;
+padding: 10px;
+margin: 2px;
+color: white;
+font-family: 'Raleway';
+}
+form > button{
+width:100px;
+height: 6vh;
+margin-top: 1vh;
+border: 2px solid white;
+background: transparent;
+color: white;
+font-family: 'Raleway';
+}
+form > button:hover{
+background: black;
+color: white;
+}
+.footer{
+height:70px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mobile-menu, .mobile-menu-hidden{
+    display: none;
+}
+.highlight{
+    color: #E31B6D;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style-type: none;
+}
+.skills-list > li{
+    position: relative;
+    font-size: 14px;
+    line-height:1.4;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.skills-list > li::before{
+    content: "▹";
+    position: absolute;
+    line-height:12px;
+    left: 0px;
+    color: #E31B6D;
+}
+
+.name-correct{
+-webkit-transition: all 0.7s ease-in-out;
+transition:all 0.7s ease-in-out;
+color: green;
+}
+
+.socialgif{
+    height: 128px;
+    width: auto;
+    left: 0px;
+}
+
+@media only screen and (max-width:480px){
+    main{
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    main{
+        padding: 0 50px;
+    }
+    .socials-icon{
+        display: none;
+    }
+    .email-contact{
+        display: none;
+    }
+   
+}
+
+@media only screen and (max-width: 850px) {
+main{
+    padding: 0px 100px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+     .nav-list{
+      display:none;   
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .about-me-pic{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .card{
+    width: 220px;
+    }
+    .about-me-container{
+        grid-template-columns: 3fr;
+    }
+
+    .mobile-active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        padding: 50px 10px;
+        width: min(75vw, 400px);
+        height: 100vh;
+        outline: #1E242C;
+        background: black;
+        box-shadow:-10px 0px 20px -15px #252934;
+        z-index: 9;
+        transform: translateX(0vw);
+        visibility: visible;
+         
+    }
+    .active-main{
+        filter: blur(5px) brightness(0.7);
+    }
+    .hamburger-active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        margin-right: -15px;
+        padding: 15px;
+        border: 0px none;
+        background: transparent;
+        color: white;
+    }
+    .mobile-active > nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .mobile-active > nav > ol{
+        padding: 0px;
+        margin:0px;
+        list-style: outside none none;
+        width: 100%;
+    }
+    .active::before{
+        display: block;
+        text-align: center;
+    }
+    .mobile-active > nav > ol > li{
+        position: relative;
+        margin: 0px auto 20px;
+        counter-increment: item 1;
+
+    }
+    .resume-btn-mobile{
+background-color: transparent;
+color: white;
+border: 1px solid var(--secondary);
+text-decoration: none;
+border-radius: 6px;
+padding: 18px 50px;
+margin: 10% auto 0px;
+cursor: pointer;
+    }
+    #intro-navn{
+     font-size:24px;
+     width:75vw;
+    }
+    form > input{
+     font-size:0.8rem;   
+    }
+    
+    
+    textarea{
+     font-size:0.6rem;   
+    }
+    
+
+  }
+ 
