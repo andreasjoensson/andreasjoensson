@@ -23,7 +23,7 @@ $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
     $("header").removeClass("loading");
     };
-    setTimeout(function(){ ahref(); }, 3000); 
+    setTimeout(function(){ ahref(); }, 1500); 
 });
 
 projektSide.addEventListener('click', () => {
@@ -211,6 +211,18 @@ projektStyringModal.classList.remove('bg-active');
 
 projektStyringBtn.addEventListener('click', function(){
 projektStyringModal.classList.add('bg-active');
+});
+
+const skoleApiBtn = document.getElementById('skoleApiDemo');
+const skoleApiModal = document.querySelector('#skoleApiModal');
+const skoleApiClose = document.querySelector('#skoleApiClose');
+
+skoleApiClose.addEventListener('click', () => {
+skoleApiModal.classList.remove('bg-active');
+})
+
+skoleApiBtn.addEventListener('click', function(){
+skoleApiModal.classList.add('bg-active');
 });
 
 

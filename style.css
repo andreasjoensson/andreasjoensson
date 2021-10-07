@@ -384,16 +384,16 @@ display: flex;
 margin: 0 auto;
 }
 
-.knap-container > button{
+.knap-container > a{
     padding: 15px;
     color: black;
     background-color: transparent;
     border:none;
-   
+   text-decoration: none;
     font-size: 1.5rem;
     margin: 10px;
     }
-.knap-container > button > i:hover{
+.knap-container > a > i:hover{
     color: var(--secondary);
     cursor: pointer;
 }
@@ -480,8 +480,8 @@ flex-direction: column;
         }
         .modal-close{
          position: absolute;
-         top: 10px;
-         right: 10px;   
+         top: 100px;
+         right: 15px;   
          cursor: pointer;
          font-size:2rem;
          color: white;
@@ -797,11 +797,116 @@ color: green;
     left: 0px;
 }
 
-@media only screen and (max-width:480px){
+
+@media only screen and (max-width: 850px) {
     main{
-        padding: 0 25px;
+        padding: 0px 100px;
     }
-}
+    }
+    
+    @media only screen and (max-width: 800px) {
+         .nav-list{
+          display:none;   
+        }
+        .nav-links{
+            display: none;
+        }
+        .mobile-menu{
+            display: block;
+        }
+        .about-me-pic{
+            display: flex;
+            justify-content: center;
+            margin-left: 0px;
+        }
+        .card{
+        width: 220px;
+        }
+        .about-me-container{
+            grid-template-columns: 3fr;
+        }
+    
+        .mobile-active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            padding: 50px 10px;
+            width: min(75vw, 400px);
+            height: 100vh;
+            outline: #1E242C;
+            background: black;
+            box-shadow:-10px 0px 20px -15px #252934;
+            z-index: 9;
+            transform: translateX(0vw);
+            visibility: visible;
+             
+        }
+        .active-main{
+            filter: blur(5px) brightness(0.7);
+        }
+        .hamburger-active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+            margin-right: -15px;
+            padding: 15px;
+            border: 0px none;
+            background: transparent;
+            color: white;
+        }
+        .mobile-active > nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+        .mobile-active > nav > ol{
+            padding: 0px;
+            margin:0px;
+            list-style: outside none none;
+            width: 100%;
+        }
+        .active::before{
+            display: block;
+            text-align: center;
+        }
+        .mobile-active > nav > ol > li{
+            position: relative;
+            margin: 0px auto 20px;
+            counter-increment: item 1;
+    
+        }
+        .resume-btn-mobile{
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--secondary);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 18px 50px;
+    margin: 10% auto 0px;
+    cursor: pointer;
+        }
+        #intro-navn{
+         font-size:24px;
+         width:75vw;
+        }
+        form > input{
+         font-size:0.8rem;   
+        }
+        
+        
+        textarea{
+         font-size:0.6rem;   
+        }
+      }
 
 @media only screen and (max-width:768px){
     main{
@@ -815,116 +920,8 @@ color: green;
     }
    
 }
-
-@media only screen and (max-width: 850px) {
-main{
-    padding: 0px 100px;
+  @media only screen and (max-width:480px){
+    main{
+        padding: 0 25px;
+    }
 }
-}
-
-@media only screen and (max-width: 800px) {
-     .nav-list{
-      display:none;   
-    }
-    .nav-links{
-        display: none;
-    }
-    .mobile-menu{
-        display: block;
-    }
-    .about-me-pic{
-        display: flex;
-        justify-content: center;
-        margin-left: 0px;
-    }
-    .card{
-    width: 220px;
-    }
-    .about-me-container{
-        grid-template-columns: 3fr;
-    }
-
-    .mobile-active{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
-        padding: 50px 10px;
-        width: min(75vw, 400px);
-        height: 100vh;
-        outline: #1E242C;
-        background: black;
-        box-shadow:-10px 0px 20px -15px #252934;
-        z-index: 9;
-        transform: translateX(0vw);
-        visibility: visible;
-         
-    }
-    .active-main{
-        filter: blur(5px) brightness(0.7);
-    }
-    .hamburger-active{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 10;
-        margin-right: -15px;
-        padding: 15px;
-        border: 0px none;
-        background: transparent;
-        color: white;
-    }
-    .mobile-active > nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-    .mobile-active > nav > ol{
-        padding: 0px;
-        margin:0px;
-        list-style: outside none none;
-        width: 100%;
-    }
-    .active::before{
-        display: block;
-        text-align: center;
-    }
-    .mobile-active > nav > ol > li{
-        position: relative;
-        margin: 0px auto 20px;
-        counter-increment: item 1;
-
-    }
-    .resume-btn-mobile{
-background-color: transparent;
-color: white;
-border: 1px solid var(--secondary);
-text-decoration: none;
-border-radius: 6px;
-padding: 18px 50px;
-margin: 10% auto 0px;
-cursor: pointer;
-    }
-    #intro-navn{
-     font-size:24px;
-     width:75vw;
-    }
-    form > input{
-     font-size:0.8rem;   
-    }
-    
-    
-    textarea{
-     font-size:0.6rem;   
-    }
-    
-
-  }
- 
