@@ -7,6 +7,13 @@ const multiplayerGame = document.querySelector('.card__multiplayerspil');
 const skoleAPI = document.querySelector('.card__skoleapi')
 const softwareJobs = document.querySelector('.card__software');
 const studentJobs = document.querySelector('.card__student');
+const pitchr = document.querySelector('.card__pitchr');
+const cardiomyopathy = document.querySelector('.card__cardiomyopathy');
+const landingpage = document.querySelector('.card__landingpage');
+const portfolio = document.querySelector('.card__portfolio');
+const kommunal = document.querySelector('.card__kommunalvalg');
+const scrape = document.querySelector('.card__scrape');
+
 
 //SIDER
 const omkringSide = document.getElementById('omkringSide');
@@ -75,10 +82,28 @@ lastScrollTop = scrollTop;
     multiplayerGame.addEventListener('click', () => {
     multiplayerGame.classList.toggle('is-flipped');
     })
+
+
     projektStyring.addEventListener('click', () => {
     projektStyring.classList.toggle('is-flipped');
     })
 
+    pitchr.addEventListener('click', () => {
+    pitchr.classList.toggle('is-flipped');
+    })
+
+    landingpage.addEventListener('click', () => {
+        landingpage.classList.toggle('is-flipped');
+    })
+
+    scrape.addEventListener('click', () => {
+        scrape.classList.toggle('is-flipped');
+    })
+
+    cardiomyopathy.addEventListener('click', () => {
+       cardiomyopathy.classList.toggle('is-flipped');
+    })
+    
 
     softwareJobs.addEventListener('click', () => {
         softwareJobs.classList.toggle('is-flipped');
@@ -90,6 +115,15 @@ lastScrollTop = scrollTop;
     
     skoleAPI.addEventListener('click', () => {
         skoleAPI.classList.toggle('is-flipped');
+    })
+
+
+    kommunal.addEventListener('click', () => {
+        kommunal.classList.toggle('is-flipped');
+    })
+    
+    portfolio.addEventListener('click', () => {
+        portfolio.classList.toggle('is-flipped');
     })
 
 
@@ -200,6 +234,29 @@ socialMediaBtn.addEventListener('click', function(){
 socialMediaModal.classList.add('bg-active');
 });
 
+const cardiomyopathyBtn = document.getElementById('cardiomyopathyDemo');
+const cardiomyopathyModal = document.querySelector('#cardiomyopathyModal');
+const cardiomyopathyClose = document.querySelector('#cardiomyopathyClose');
+
+cardiomyopathyClose.addEventListener('click', () => {
+cardiomyopathyModal.classList.remove('bg-active');
+})
+
+cardiomyopathyBtn.addEventListener('click', function(){
+cardiomyopathyModal.classList.add('bg-active');
+});
+
+const landingpageBtn = document.getElementById('landingpageDemo');
+const landingpageModal = document.querySelector('#landingpageModal');
+const landingpageClose = document.querySelector('#landingpageClose');
+
+landingpageClose.addEventListener('click', () => {
+landingpageModal.classList.remove('bg-active');
+})
+
+landingpageBtn.addEventListener('click', function(){
+landingpageModal.classList.add('bg-active');
+});
 
 const projektStyringBtn = document.getElementById('projektStyringDemo');
 const projektStyringModal = document.querySelector('#projektStyringModal');
@@ -225,13 +282,39 @@ skoleApiBtn.addEventListener('click', function(){
 skoleApiModal.classList.add('bg-active');
 });
 
+const portfolioBtn = document.getElementById('portfolioDemo');
+const portfolioModal = document.querySelector('#portfolioModal');
+const portfolioClose = document.querySelector('#portfolioClose');
+
+portfolioClose.addEventListener('click', () => {
+portfolioModal.classList.remove('bg-active');
+})
+
+portfolioBtn.addEventListener('click', function(){
+portfolioModal.classList.add('bg-active');
+});
+
+const kommunalvalgBtn = document.getElementById('kommunalvalgDemo');
+const kommunalvalgModal = document.querySelector('#kommunalvalgModal');
+const kommunalvalgClose = document.querySelector('#kommunalvalgClose');
+
+kommunalvalgClose.addEventListener('click', () => {
+kommunalvalgModal.classList.remove('bg-active');
+})
+
+kommunalvalgBtn.addEventListener('click', function(){
+kommunalvalgModal.classList.add('bg-active');
+});
 
 
+const pitchrBtn = document.getElementById('pitchrDemo');
+const pitchrModal = document.querySelector('#pitchrModal');
+const pitchrClose = document.querySelector('#pitchrClose');
 
+pitchrClose.addEventListener('click', () => {
+pitchrModal.classList.remove('bg-active');
+})
 
-//SLUT MED MODAL
-
-
-
-
-
+pitchrBtn.addEventListener('click', function(){
+pitchrModal.classList.add('bg-active');
+});

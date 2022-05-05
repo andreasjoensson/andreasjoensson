@@ -68,6 +68,29 @@ margin-bottom: 35px;
         .card__socialmedie.is-flipped{
             transform: rotateY(180deg);
         }   
+        .card__pitchr.is-flipped{
+            transform: rotateY(180deg);
+        }   
+
+        .card__scrape.is-flipped{
+            transform: rotateY(180deg);
+        }   
+
+        .card__cardiomyopathy.is-flipped{
+            transform: rotateY(180deg);
+        }   
+
+        .card__landingpage.is-flipped{
+            transform: rotateY(180deg);
+        }   
+
+        .card__kommunalvalg.is-flipped{
+            transform: rotateY(180deg);
+        }   
+
+        .card__portfolio.is-flipped{
+            transform: rotateY(180deg);
+        }   
 .card__projektstyring.is-flipped{
 transform: rotateY(180deg);
 }
@@ -440,15 +463,18 @@ flex-wrap: wrap;
 border: 2px solid white;
 background:transparent;
 }
+
+
 .modal{
 background-color: white;
-width: 60%;
-height: 50%;
+width:auto;
+height: 600px;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 }
+
 .modal-bg{
     position: fixed;
     top:0;
@@ -677,6 +703,64 @@ padding: 10px;
    background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/3E0C/production/_112548851_gettyimages-1225728782.jpg'), 
                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
 }
+
+.card-pitchr{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNjhlOWIyMzItYjQzNS00MjkyLWFmZjYtMTdiNTVmYzE2OTQxXkEyXkFqcGdeQXVyNjY0ODg0MTA@._V1_.jpg');
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNjhlOWIyMzItYjQzNS00MjkyLWFmZjYtMTdiNTVmYzE2OTQxXkEyXkFqcGdeQXVyNjY0ODg0MTA@._V1_.jpg'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNjhlOWIyMzItYjQzNS00MjkyLWFmZjYtMTdiNTVmYzE2OTQxXkEyXkFqcGdeQXVyNjY0ODg0MTA@._V1_.jpg'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNjhlOWIyMzItYjQzNS00MjkyLWFmZjYtMTdiNTVmYzE2OTQxXkEyXkFqcGdeQXVyNjY0ODg0MTA@._V1_.jpg'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+ }
+
+ .card-landingpage{
+    background-image: url('./billeder/pitchr.png');
+    background-image: url('./billeder/pitchr.png'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('./billeder/pitchr.png'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('./billeder/pitchr.png'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+ }
+ .card-scrape{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/107/462/small/spider-web-background-free-vector.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/107/462/small/spider-web-background-free-vector.jpg'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/107/462/small/spider-web-background-free-vector.jpg'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/107/462/small/spider-web-background-free-vector.jpg'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+ }
+
+ .card-cardiomyopathy{
+    background-image: url('https://cdn.hswstatic.com/gif/becoming-doctor.jpg');
+    background-image: url('https://cdn.hswstatic.com/gif/becoming-doctor.jpg'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('https://cdn.hswstatic.com/gif/becoming-doctor.jpg'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('https://cdn.hswstatic.com/gif/becoming-doctor.jpg'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+ }
+
+ .card-kommunalvalg{
+    background-image: url('https://legacy.altinget.dk/images/article/198582/71375.jpg');
+    background-image: url('https://legacy.altinget.dk/images/article/198582/71375.jpg'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('https://legacy.altinget.dk/images/article/198582/71375.jpg'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('https://legacy.altinget.dk/images/article/198582/71375.jpg'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+ }
+ .card-portfolio{
+    background-image: url('https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg');
+    background-image: url('https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg'), 
+                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+    background-image: url('https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg'), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
+    background-image: url('https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg'), 
+                      linear-gradient(to bottom, #ADB2B6, #ABAEB3);
+ }
 .card-span{
     background-image: linear-gradient(to right bottom, rgba(57, 107, 42, 0.9), rgba(27, 46, 33, 0.9));
 }
