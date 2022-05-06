@@ -180,9 +180,8 @@ else{
 
 const softwareJobsBtn = document.getElementById('softwareJobsDemo');
 const softwareJobsModal = document.querySelector('#softwareJobsModal');
-const softwareJobsClose = document.querySelector('#softwareJobsClose');
 
-softwareJobsClose.addEventListener('click', () => {
+softwareJobsModal.addEventListener('click', () => {
 softwareJobsModal.classList.remove('bg-active');
 })
 
@@ -195,9 +194,8 @@ softwareJobsModal.classList.add('bg-active');
 
 const studentJobsBtn = document.getElementById('studentJobsDemo');
 const studentJobsModal = document.querySelector('#studentJobsModal');
-const studentJobsClose = document.querySelector('#studentJobsClose');
 
-studentJobsClose.addEventListener('click', () => {
+studentJobsModal.addEventListener('click', () => {
 studentJobsModal.classList.remove('bg-active');
 })
 
@@ -210,9 +208,8 @@ studentJobsModal.classList.add('bg-active');
 
 const multiplayerGameBtn = document.getElementById('multiplayerGameDemo');
 const multiplayerGameModal = document.querySelector('#multiplayerGameModal');
-const multiplayerGameClose = document.querySelector('#multiplayerGameClose');
 
-multiplayerGameClose.addEventListener('click', () => {
+multiplayerGameModal.addEventListener('click', () => {
 multiplayerGameModal.classList.remove('bg-active');
 })
 
@@ -224,9 +221,8 @@ multiplayerGameModal.classList.add('bg-active');
 
 const socialMediaBtn = document.getElementById('socialMediaDemo');
 const socialMediaModal = document.querySelector('#socialMediaModal');
-const socialMediaClose = document.querySelector('#socialMediaClose');
 
-socialMediaClose.addEventListener('click', () => {
+socialMediaModal.addEventListener('click', () => {
 socialMediaModal.classList.remove('bg-active');
 })
 
@@ -236,9 +232,8 @@ socialMediaModal.classList.add('bg-active');
 
 const cardiomyopathyBtn = document.getElementById('cardiomyopathyDemo');
 const cardiomyopathyModal = document.querySelector('#cardiomyopathyModal');
-const cardiomyopathyClose = document.querySelector('#cardiomyopathyClose');
 
-cardiomyopathyClose.addEventListener('click', () => {
+cardiomyopathyModal.addEventListener('click', () => {
 cardiomyopathyModal.classList.remove('bg-active');
 })
 
@@ -248,9 +243,8 @@ cardiomyopathyModal.classList.add('bg-active');
 
 const landingpageBtn = document.getElementById('landingpageDemo');
 const landingpageModal = document.querySelector('#landingpageModal');
-const landingpageClose = document.querySelector('#landingpageClose');
 
-landingpageClose.addEventListener('click', () => {
+landingpageModal.addEventListener('click', () => {
 landingpageModal.classList.remove('bg-active');
 })
 
@@ -260,9 +254,8 @@ landingpageModal.classList.add('bg-active');
 
 const projektStyringBtn = document.getElementById('projektStyringDemo');
 const projektStyringModal = document.querySelector('#projektStyringModal');
-const projektStyringClose = document.querySelector('#projektStyringClose');
 
-projektStyringClose.addEventListener('click', () => {
+projektStyringModal.addEventListener('click', () => {
 projektStyringModal.classList.remove('bg-active');
 })
 
@@ -272,9 +265,8 @@ projektStyringModal.classList.add('bg-active');
 
 const skoleApiBtn = document.getElementById('skoleApiDemo');
 const skoleApiModal = document.querySelector('#skoleApiModal');
-const skoleApiClose = document.querySelector('#skoleApiClose');
 
-skoleApiClose.addEventListener('click', () => {
+skoleApiModal.addEventListener('click', () => {
 skoleApiModal.classList.remove('bg-active');
 })
 
@@ -282,23 +274,12 @@ skoleApiBtn.addEventListener('click', function(){
 skoleApiModal.classList.add('bg-active');
 });
 
-const portfolioBtn = document.getElementById('portfolioDemo');
-const portfolioModal = document.querySelector('#portfolioModal');
-const portfolioClose = document.querySelector('#portfolioClose');
 
-portfolioClose.addEventListener('click', () => {
-portfolioModal.classList.remove('bg-active');
-})
-
-portfolioBtn.addEventListener('click', function(){
-portfolioModal.classList.add('bg-active');
-});
 
 const kommunalvalgBtn = document.getElementById('kommunalvalgDemo');
 const kommunalvalgModal = document.querySelector('#kommunalvalgModal');
-const kommunalvalgClose = document.querySelector('#kommunalvalgClose');
 
-kommunalvalgClose.addEventListener('click', () => {
+kommunalvalgModal.addEventListener('click', () => {
 kommunalvalgModal.classList.remove('bg-active');
 })
 
@@ -309,9 +290,8 @@ kommunalvalgModal.classList.add('bg-active');
 
 const pitchrBtn = document.getElementById('pitchrDemo');
 const pitchrModal = document.querySelector('#pitchrModal');
-const pitchrClose = document.querySelector('#pitchrClose');
 
-pitchrClose.addEventListener('click', () => {
+pitchrModal.addEventListener('click', () => {
 pitchrModal.classList.remove('bg-active');
 })
 

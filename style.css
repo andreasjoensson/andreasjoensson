@@ -196,7 +196,6 @@ header{
     height: 100px;
     display: flex;
     align-items: center;
-    position: fixed;
     top: 0;
     z-index: 11;
     width: 100%;
@@ -648,12 +647,12 @@ padding: 10px;
     background-size: cover;
     background-position:center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg');
-    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg'), 
+    background-image: url('http://www.sdgyoungleaders.org/wp-content/uploads/2020/05/AdobeStock_306748388.jpeg');
+    background-image: url('http://www.sdgyoungleaders.org/wp-content/uploads/2020/05/AdobeStock_306748388.jpeg'), 
                       -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
-    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg'), 
+    background-image: url('http://www.sdgyoungleaders.org/wp-content/uploads/2020/05/AdobeStock_306748388.jpeg'), 
                       -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
-    background-image: url('https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg'), 
+    background-image: url('http://www.sdgyoungleaders.org/wp-content/uploads/2020/05/AdobeStock_306748388.jpeg'), 
                       linear-gradient(to bottom, #ADB2B6, #ABAEB3);
 }
 .card-software{
@@ -761,6 +760,8 @@ padding: 10px;
     background-image: url('https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg'), 
                       linear-gradient(to bottom, #ADB2B6, #ABAEB3);
  }
+
+
 .card-span{
     background-image: linear-gradient(to right bottom, rgba(57, 107, 42, 0.9), rgba(27, 46, 33, 0.9));
 }
@@ -781,10 +782,9 @@ padding: 10px;
 }
 .card-gif{
     height: 70px;
-    width: 70px;
     position: absolute;
     top: 25px;
-    left: 15px;
+    left: 6px;
 }
 .card-project{
     font-size: 1.9rem;
