@@ -63,6 +63,11 @@ header.classList.toggle('active-main');
 var lastScrollTop;
 navbar = document.querySelector('header');
 window.addEventListener('scroll',function(){
+mobileMenu.classList.add('mobile-menu-hidden');
+mobileMenu.classList.remove('mobile-active');
+hamburgerIcon.classList.remove('hamburger-active')
+main.classList.remove('active-main');
+header.classList.remove('active-main');
 var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 if(scrollTop > lastScrollTop){
 navbar.style.top='-100px';
@@ -132,7 +137,7 @@ lastScrollTop = scrollTop;
 
 $(document).ready(function () {
 $('.nav-hamburger').click(function(){
-$('.nav-list').toggleClass('active-nav');    
+$('.nav-list').toggleClass('active-nav'); 
 })
 })
 

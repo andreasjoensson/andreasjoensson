@@ -919,7 +919,7 @@ color: green;
             bottom: 0px;
             right: 0px;
             padding: 50px 10px;
-            width: min(75vw, 400px);
+            width: 100vw;
             height: 100vh;
             outline: #1E242C;
             background: black;
