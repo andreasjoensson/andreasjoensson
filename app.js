@@ -30,7 +30,7 @@ $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
     $("header").removeClass("loading");
     };
-    setTimeout(function(){ ahref(); }, 1500); 
+    setTimeout(function(){ ahref(); }, 500); 
 });
 
 projektSide.addEventListener('click', () => {
